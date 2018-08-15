@@ -1,0 +1,259 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.clearFix:after{
+    content: '';
+    height:0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+body{
+    background-color:#eeeeee;
+}
+.wrap{
+    width:970px;
+    margin:0 auto;
+}
+header{
+    background-color:#ffffff;
+    padding:15px 20px;
+}
+header img{
+    width:100px;
+}
+.link{
+    float:right;
+    margin-top:10px;
+    margin-right:50px;
+}
+.link a{
+    text-decoration: none;
+    color: #64a8dc;
+    font-size: 12px;
+}
+.link a:hover{
+    color:#07127a;
+}
+.link i{
+    display: inline-block;
+    width:0;
+    height:6px;
+    margin:0 8px;
+    border-left: 1px solid #c2c2d4;
+}
+main{
+    height:600px;
+    background:#dee5ed url("../images/loginbg.jpg") no-repeat 567px 344px;
+    overflow: hidden;
+    border: 1px solid rgba(199,216,244,0.83);
+}
+.mainInfo{
+    width:700px;
+    margin:50px auto;
+    background: #fff;
+}
+.mainInfo > div{
+    width:350px;
+    /*height:100%;*/
+    float: left;
+    padding:20px;
+}
+.regularMethod{
+    position: relative;
+    border-right: 1px dashed rgba(199,216,244,0.83);
+}
+
+.regularMethod p:nth-child(1) span{
+    margin:0 10px 0 0;
+    padding:5px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#475966;
+}
+.regularMethod p:nth-child(1) span:hover{
+    cursor: pointer;
+}
+.regularMethod p:nth-child(1) .dot{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    margin:0 10px 0 0;
+    padding:0;
+    border-radius: 50%;
+    background-color:#e4ebf0;
+}
+.regularMethod p:nth-child(1) .checked{
+    color: #5290da;
+    border-bottom: 2px solid #5290da;
+}
+.telRegis-area{
+    margin-top:30px;
+    visibility: hidden;
+}
+.telRegis-area p label,
+.mailRegis-area p label{
+    font-size: 14px;
+    color: #9aa8b3;
+}
+.telRegis-area p input,
+.mailRegis-area p input{
+    height:30px;
+    border-color: transparent;
+    outline: none;
+}
+.telRegis-area > p:nth-child(2) input,
+.telRegis-area > p:nth-child(4) input,
+.mailRegis-area > p:nth-child(2) input,
+.mailRegis-area > p:nth-child(4) input{
+    width:100%;
+}
+.telRegis-area > p:nth-child(1),
+.telRegis-area > p:nth-child(3),
+.telRegis-area > p:nth-child(5),
+.telRegis-area > p:nth-child(7),
+.mailRegis-area > p:nth-child(1),
+.mailRegis-area > p:nth-child(3),
+.mailRegis-area > p:nth-child(5),
+.mailRegis-area > p:nth-child(7){
+    margin-top:30px;
+}
+.telRegis-area > p:nth-child(2),
+.telRegis-area > p:nth-child(4),
+.telRegis-area > p:nth-child(6),
+.telRegis-area > p:nth-child(8),
+.mailRegis-area > p:nth-child(2),
+.mailRegis-area > p:nth-child(4),
+.mailRegis-area > p:nth-child(6),
+.mailRegis-area > p:nth-child(8){
+    border-bottom: 1px solid rgba(199,216,244,0.83);
+    position: relative;
+}
+.telRegis-area > p:nth-child(2) > i,
+.telRegis-area > p:nth-child(4) > i,
+.telRegis-area > p:nth-child(6) > i,
+.telRegis-area > p:nth-child(8) > i,
+.mailRegis-area > p:nth-child(2) > i,
+.mailRegis-area > p:nth-child(4) > i,
+.mailRegis-area > p:nth-child(6) > i,
+.mailRegis-area > p:nth-child(8) > i{
+    font-size: 12px;
+    font-style: normal;
+    color:#f00;
+    position:absolute;
+    top:35px;
+    left:0;
+}
+.mailRegis-area > p:nth-child(8) .verif-code{
+    display: inline-block;
+    width: 80px;
+    height:30px;
+    background-color:rgba(222,162,74,0.83);
+    color: #9b5903;
+    margin-left:55px ;
+    text-align: center;
+    line-height: 30px;
+}
+.mailRegis-area > p:nth-child(8) .verif-code:hover{
+    cursor:default;
+}
+#writeCode{
+    width:70%;
+}
+#sendCode{
+    width:30%;
+    padding:5px 10px;
+    background-color:rgba(185,219,243,0.83);
+    color: #fff;
+    font-size: 12px;
+}
+#sendCode:hover{
+    cursor: pointer;
+}
+.telRegis-area > p:last-child,
+.mailRegis-area >p:last-child{
+    margin-top:40px;
+}
+.telRegis-area > p:last-child button,
+.mailRegis-area > p:last-child button{
+    width: 100%;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: #1687d9;
+    color: #fff;
+}
+.telRegis-area > p:last-child button:hover{
+    cursor: pointer;
+}
+.mailRegis-area{
+    position:absolute;
+    width:309px;
+    top:45px;
+    left: 20px;
+    visibility: hidden;
+}
+.regularMethod .dot-division{
+    width:40px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#9aa8b3;
+    border-radius: 50%;
+    border:1px dashed rgba(199,216,244,0.83);
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    margin-top:-20px;
+    right:-20px;
+}
+.visible{
+    visibility: visible;
+}
+.otherMethod p:nth-child(1){
+    margin:30px 0 20px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color:#9aa8b3 ;
+    font-size: 14px;
+}
+.otherMethod p:nth-child(2){
+    padding-left:85px;
+    margin:0 0 150px 0;
+}
+.otherMethod p:nth-child(2) img{
+    margin-right: 20px;
+}
+.otherMethod p:nth-child(3){
+    text-align: center;
+}
+.otherMethod p:nth-child(3) a{
+    text-decoration: none;
+    color:#7dc8f3;
+}
+.otherMethod p:nth-child(3) a:hover{
+    color:#07127a;
+}
+footer{
+    background-color:rgba(244,244,244,0.83) ;
+    text-align: center;
+    padding:15px 0;
+    font-size: 12px;
+    color:#9aa8b3 ;
+    position: relative;
+}
+footer span:hover{
+    cursor: pointer;
+}
+footer img{
+    position: absolute;
+    top:14px;
+    left:50%;
+    margin-left:-17px;
+}

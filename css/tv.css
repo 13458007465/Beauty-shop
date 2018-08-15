@@ -1,0 +1,134 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+}
+main{
+    background: url("../images/bg-cols-b4.jpg") no-repeat center bottom;
+}
+.main-tv-wrap{
+    background: url("../images/bg-tv-ban.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.main-tv{
+    width:95%;
+    margin:40px auto;
+    text-align: center;
+}
+.video-wrap{
+    width:1200px;
+    height:1400px;
+    margin:90px auto 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title a{
+    display: inline-block;
+    margin-right:90px;
+    text-decoration: none;
+    color: #9b9ba8;
+}
+.title a:first-child{
+    margin-left: 60px;
+}
+.title .active{
+    color:#e24d2a ;
+}
+.title a:hover{
+    color:#e24d2a;
+}
+.tv-slider-wrap{
+    width:100%;
+    position:relative;
+}
+.tv-list{
+    width:calc(1200px * 9);
+    position:absolute;
+    top:0;
+    left:-1200px;
+}
+.tv-list .itemsWrap{
+    width:1200px;
+    /*padding-left: 15px;*/
+    float:left;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.items{
+    width:290px;
+    height:280px;
+    margin:0 10px 30px 0px;
+    position: relative;
+}
+.items .videoImg img{
+    width:280px;
+    height:280px;
+}
+.info{
+    width: 100%;
+    position:absolute;
+    bottom:10px;
+    left:0;
+    padding:15px;
+    color:#fff;
+    text-align: left;
+}
+.bg{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    background-color: #e24d2a;
+    height:0;
+    transition: all ease-out .2s;
+}
+.items:hover .bg{
+    height:90px;
+}
+.info h4{
+    margin:0 0 10px 0;
+}
+.info span{
+    margin:10px 50px 0 0;
+    font-size:14px;
+}
+.info hr{
+    width:30px;
+    border:none;
+    border-top:2px solid #fff;
+}
+/*左右箭头*/
+.arrows{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background: url("../images/arrows.png") no-repeat;
+    position: absolute;
+    top:1080px;
+}
+.arrows:hover{
+    background-color: rgba(210,210,223,0.88);
+    cursor:pointer;
+}
+.left{
+    left:200px;
+    background-position: -8px -11px;
+}
+.right{
+    right:200px;
+    background-position: -82px -11px;
+}
+footer{
+    padding:5px 0;
+}
